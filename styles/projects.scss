@@ -1,0 +1,16 @@
+.movieInfo {
+  font-family: $font-roboto-flex;
+  padding: 0 .8rem;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin-bottom: .3rem;
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: .5rem;
+    text-decoration: underline;
+  }
+}

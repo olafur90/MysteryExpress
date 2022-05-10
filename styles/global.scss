@@ -1,0 +1,88 @@
+@import 'config';
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Shadows+Into+Light&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: $baseFontSize;
+}
+
+body {
+    background-color: darken($baseColor, 6%);
+}
+.banner {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: fill;
+}
+
+.sites {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 1rem 0;
+    align-content: flex-end;
+    justify-content: space-between;
+
+
+    a {
+        font-family: $font-shadows-into-light;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $titleColor;
+
+        &:hover {
+            border-bottom: 1px solid black;
+        }
+    }
+}
+.active {
+    border-bottom: .15rem solid rgb(95, 94, 94);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  li {
+    margin: 0 2.5rem;
+  }
+}
+
+.projects {
+  display: flex;
+  margin-top: 4rem;
+}
+.proj {
+  display: flex;
+  flex-direction: row;
+
+  img {
+    max-width: 100%;
+  }
+
+  h1 {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+.cover-img-container {
+  max-width: 50%;
+}
+
+.productInfo {
+  display:flex;
+  flex-direction: column;
+  object-fit: initial;
+  img {
+    object-fit: inherit;
+  }
+  
+  h2 {
+    margin: 1rem 2rem;
+    text-align: left;
+  }
+}
