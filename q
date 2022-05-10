@@ -11,4 +11,3 @@
  public | users             | table    | olafur
  public | vidburdir         | table    | olafur
  public | vidburdir_id_seq  | sequence | olafur
-

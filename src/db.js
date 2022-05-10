@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 const { 
+  PORT: port = 3000,
   DATABASE_URL: connectionString, 
   NODE_ENV: nodeEnv = 'development' 
 } = process.env;
